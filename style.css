@@ -1,0 +1,158 @@
+html {
+    font-size: 63.7%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Roboto';
+}
+.head-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.side-container {
+    width: 1280px;
+    height: 100vh;
+    /* background: #dfdfdf; */
+}
+header {
+    position: relative;
+    width: 100%;
+    /* height: ; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 30px 50px;
+    width: 100%;
+}
+header nav ul {
+    display: flex;
+    /* gap: 20px; */
+}
+header nav ul li {
+    list-style-type: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    list-style-type: none;
+    padding: 10px 30px;
+}
+header nav ul li i {
+    color: black;
+}
+header .box-img {
+    width: 608px;
+    height: 740px;
+    background-image: url(/img/header.png);
+}
+header .box-2 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    /* background: #000; */
+    width: 100%;
+    padding: 30px;
+}
+header .box-2 .box-text {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/2/3/3;
+    /* background: #c0c0c0; */
+    /* background: #000; */
+}
+header .box-2 .box-text h1 {
+    margin-top: 90px;
+    font-size: 6rem;
+    font-family: sans-serif, 'Roboto';
+    font-weight: 500;
+    color: #156963;
+}
+header .box-2 .box-text p {
+    line-height: 1.5;
+    color: #2C1500;
+    font-size: 2rem;
+    padding: 30px 0;
+}
+header .box-2 .box-btn {
+    display: flex;
+    width: 100%;
+    grid-area: 3 / 2 / 4 / 3;
+    background: hsl(0, 0%, 59%);
+}
+header .box-2 .box-btn .btn {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+header .box-2 .box-btn .ichi{
+    background: #fff;
+}
+header .box-2 .box-btn .ichi p {
+    color: #333333
+}
+header .box-2 .box-btn .ni {
+    padding: 0 0 0 30px;
+    background: #156963;
+}
+header .box-2 .box-btn .ni p {
+    color: #F2F2F2;
+}
+header .box-2 .box-btn .ni h3 {
+    color: #fff;
+}
+header .box-2 .box-btn  h3 {
+    color: #156963;
+    margin-top: 15px;
+}
+header .box-2 .box-btn .btn{
+    font-size: 2.5rem;
+}
+
+/* End header */
+
+/* Start card-section */
+.cards-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 100px 50px;
+    margin-top: 100px;
+}
+.cards-section .fourCards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards-section .card {
+    width: 268px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+}
+.cards-section .card .a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    color: #156963;
+}
+.cards-section .card p {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #2C1500;
+}
+/* End card-section */
