@@ -14,8 +14,6 @@ html {
 }
 .side-container {
     width: 1280px;
-    height: 100vh;
-    /* background: #dfdfdf; */
 }
 header {
     position: relative;
@@ -138,7 +136,7 @@ header .box-2 .box-btn .btn{
     width: 268px;
     background: #fff;
     border: 1px solid #E0E0E0;
-    padding: 10px 15px;
+    padding: 15px 15px;
     flex-wrap: wrap;
 }
 .cards-section .card .a {
@@ -150,9 +148,339 @@ header .box-2 .box-btn .btn{
     color: #156963;
 }
 .cards-section .card p {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 15px;
     line-height: 1.5;
     color: #2C1500;
 }
 /* End card-section */
+
+/* Start featured */
+.featured {
+    width: 100%;
+    padding: 50px;
+}
+.featured .featured-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.featured .featured-title h2 {
+    font-weight: 500;
+}
+.featured .featured-title p {
+    padding: 10px 15px;
+    border:1px solid #E0E0E0;
+}
+.featured .featured-cards {
+    border-top: 1px solid #E0E0E0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.featured .featured-cards .fCard {
+    width: 217px;
+    text-align: center;
+    font-size: 16px;
+}
+.featured .featured-cards .fCard p {
+    margin: 10px 0;
+    font-weight: 400;
+}
+.featured .featured-cards .fCard h2 {
+    font-weight: 600;
+}
+/* End featured */
+
+/* Start main */
+main {
+    padding: 20px 50px;
+    width: 100%;
+    height: 763px;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+main .mainBox-1 {
+    width: 568px;
+    height: 100%;
+    position: relative;
+}
+main .mainBox-1 .boxCard-1 {
+    position: relative;
+    font-size: 24px;
+    line-height: 1.4;
+    padding: 10px 0;
+}
+main .mainBox-1 .boxCard-1 p {
+    color:#2C1500;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+main .mainBox-1 img{
+    position: absolute;
+    bottom: 110px;
+}
+/* End   main */
+
+/* Start shop section */
+aside {
+    width: 100%;
+    padding: 0 50px;    
+}
+.shop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background: #F3F4F6;
+}
+.shop .shopText {
+    width: 600px;
+    font-size: 30px;
+    font-weight:700;
+    color: #2C1500;
+}
+.shop .shopText button {
+    border: none;
+    padding: 15px 35px;
+    font-weight: 700;
+    margin-top: 50px;
+    background: #156963;
+    color:#FAFEFE;
+    font-size: 16px;
+}
+/* End shop section */
+
+footer {
+    margin-top: 100px;
+    padding: 50px 110px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid black;
+}
+footer .fBox {
+    width: 400px;
+    font-size: 15px;
+}
+footer .fBox-1 {
+    padding: 0 100px 0 0;
+}
+footer .fBox-2 {
+    display: flex;
+    gap: 40px;
+}
+footer .fBox-1 h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #156963;
+}
+footer .fBox-1 h3 {
+    margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+footer .fBox-2 h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+footer .fBox-2 .p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+footer .fBox-3 h3 {
+    /* margin-top: 20px; */
+    font-weight: 700;
+    /* margin-bottom: 10px; */
+    font-size: 16px;
+    color: #333333;
+}
+footer .fBox-3 .gmail {
+    margin-top: 20px;
+    padding: 7px 10px;
+}
+footer .fBox-3 .submit {
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    padding: 8px 15px;
+    font-weight: 500;
+    /* margin-top: 50px; */
+    background: #156963;
+    color:#FAFEFE;
+    font-size: 13px;
+}
+
+.ibragimov {
+    width: 100%;
+    padding: 30px 0;
+    background: #000;
+}
+.ibragimov h1 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .side-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    header .box-2 .box-text h1 {
+        font-size: 5rem;
+    }
+
+    header .box-2 .box-text p {
+        font-size: 1.8rem;
+    }
+
+    .cards-section .fourCards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cards-section .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .featured .featured-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
+    header .box-img {
+        height: 400px;
+        background-size: cover;
+    }
+
+    header .box-2 .box-text h1 {
+        font-size: 4rem;
+    }
+
+    .featured .featured-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .shop {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .shop img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-container {
+        padding: 0 15px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    header .box-2 .box-text h1 {
+        font-size: 3.5rem;
+    }
+
+    header .box-2 .box-text p {
+        font-size: 1.6rem;
+    }
+
+    .featured .featured-cards {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    footer .fBox {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    header nav ul li a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    header .box-2 .box-text h1 {
+        font-size: 3rem;
+    }
+
+    header .box-2 .box-text p {
+        font-size: 1.4rem;
+    }
+
+    .cards-section {
+        padding: 50px 10px;
+    }
+
+    .cards-section .card {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .ibragimov h1 {
+        font-size: 12px;
+    }
+}
